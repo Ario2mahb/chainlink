@@ -7,7 +7,7 @@ packages:
     config:
       dir: "{{ .InterfaceDir }}"
       filename: "mock_{{ .InterfaceName | snakecase }}_test.go"
-      inpackage: true
+      inpackage: false
       mockname: "mock{{ .InterfaceName | camelcase }}"
     interfaces:
       Node:
